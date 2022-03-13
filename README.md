@@ -1,12 +1,12 @@
 
-
-- cdkリソースのテンプレート作成
-- eslint
-- prettier
-- vscode
-- husky
-- tsconfig
-  - 絶対パスのimport
-- jest
-- plopによるcdk packageの自動生成
+## todo
+- [x] cdkリソースのテンプレート作成
+- [ ] tsconfig
+  - [x] 絶対パスでのimport
+- [ ] eslint
+- [ ] prettier
+- [ ] vscode
+- [ ] husky
+- [ ] jest
+- [ ] plopによるcdk packageの自動生成
 - 
