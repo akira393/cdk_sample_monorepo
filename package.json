@@ -45,5 +45,13 @@
     "*.json": [
       "npm run format"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "bundling": {
+    "forceDockerBundling": false
   }
 }

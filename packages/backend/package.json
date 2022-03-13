@@ -11,6 +11,7 @@
     "cdk": "cdk"
   },
   "dependencies": {
+    "@aws-cdk/aws-lambda-nodejs": "^1.148.0",
     "aws-cdk-lib": "2.15.0",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.16"
