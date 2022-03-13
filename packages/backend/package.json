@@ -8,10 +8,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk",
-    "lint": "eslint --fix --ext .js,.ts,.tsx ./lib ./bin --ignore-path ../../.gitignore",
-    "prettier": "prettier --ignore-path ../../.gitignore --write \"**/*.+(js|json|ts)\"",
-    "format": "npm run prettier -- --write"
+    "cdk": "cdk"
   },
   "dependencies": {
     "aws-cdk-lib": "2.15.0",

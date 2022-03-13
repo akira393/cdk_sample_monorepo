@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "eslint --fix --ext .js,.ts ./packages --ignore-path .gitignore",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts)\"",
+    "format": "npm run prettier -- --write",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -24,10 +29,20 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.4",
     "jest": "^26.4.2",
+    "lint-staged": "^12.3.5",
     "prettier": "2.5.1",
     "ts-jest": "^26.2.0",
     "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.13.0",
     "typescript": "~3.9.7"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run format",
+      "npm run lint"
+    ],
+    "*.json": [
+      "npm run format"
+    ]
   }
 }
